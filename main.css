@@ -1,6 +1,25 @@
+/* This is a longer way to do it*/
 .double {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background-color: #000;
-    
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.double:hover {
+    height: 200px;
+    width: 200px;
+    background-color: #bada55;
+}
+
+/* Below is an easier way to do it? */
+img {
+    margin: 25px 100px;
+    transition: transform 1s ease;
+}
+
+img:hover {
+    transform: scale(2);
 }
