@@ -15,11 +15,25 @@
 }
 
 /* Below is an easier way to do it? */
-img {
+.bear1 {
     margin: 25px 100px;
     transition: transform 1s ease;
 }
 
-img:hover {
+.bear1:hover {
     transform: scale(2) rotate(360deg);
+}
+
+.bear2 {
+    margin: 25px 100px;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
